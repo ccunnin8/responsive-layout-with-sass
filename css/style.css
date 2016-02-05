@@ -15,7 +15,7 @@ img {
 	box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
 }
 header {
-	height: 100%;
+	overflow: auto;
 }
 footer {
 	border-top: 1px solid black;
@@ -35,7 +35,6 @@ footer h1, footer h2 {
 }
 footer h1 {
 	float: left;
-	padding: 0;
 }
 footer h2 {
 	float: right;
@@ -88,6 +87,9 @@ a {
 .bottom-nav {
 	display: none;
 }
+.banner h3, .banner p {
+	padding: 20px 0;
+}
 /*interactive stuff*/
 a:visited {
 	color:inherit;
@@ -113,6 +115,7 @@ li:hover {
 		padding: 0 20px;
 	}
 	.introduction {
+		width: 100%;
 		text-align: left;
 		overflow: auto;
 	}
@@ -120,7 +123,12 @@ li:hover {
 		width:30%;
 		float: right;
 		margin-left: 20px;
-		clear:right;
+		display: inline-block;
+	}
+	.introduction p {
+		float: left;
+		width: 60%;
+		display: inline-block;
 	}
 	.container {
 		overflow: auto;
@@ -141,6 +149,24 @@ li:hover {
 }
 
 @media (min-width: 1024px) {
+	header {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.name, .main-nav {
+		margin: 2% 0;
+	}
+	.name {
+		text-align: left;
+		float: left;
+		width: 50%;
+	}
+	.main-nav {
+		text-align: right;
+		float: right;
+		display: inline-block;
+		width:50%;
+	}
 	.col {
 		width: 33.3%;
 	}
