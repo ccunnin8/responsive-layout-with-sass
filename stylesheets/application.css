@@ -1,0 +1,304 @@
+/*main rules and styles for all devises*/
+/* line 1, ../sass/base/_extends.scss */
+footer, .banner, .introduction, .col, .container, .name, .main-nav li {
+  text-align: center;
+}
+
+/* line 5, ../sass/base/_extends.scss */
+body, p, img, .banner, .introduction, .col, .container {
+  margin: 0 auto;
+}
+
+/** COLOR NAMES **/
+/** Functional color names **/
+/** media break points **/
+/***** BASE STYLES *******/
+/* line 6, ../sass/base/_base.scss */
+html {
+  width: 100%;
+  background-color: rgba(43, 41, 39, 0.1);
+}
+
+/* line 10, ../sass/base/_base.scss */
+body {
+  max-width: 1340px;
+}
+
+/* line 13, ../sass/base/_base.scss */
+img {
+  width: 90%;
+  display: block;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 18, ../sass/base/_base.scss */
+header {
+  overflow: auto;
+}
+@media (min-width: 1024px) {
+  /* line 18, ../sass/base/_base.scss */
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* line 25, ../sass/base/_base.scss */
+span {
+  font-weight: bold;
+}
+
+/* line 28, ../sass/base/_base.scss */
+p {
+  max-width: 70%;
+}
+
+/* line 31, ../sass/base/_base.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  border-top: 1px solid black;
+  font-size: 0.75rem;
+  padding: 0 10px;
+}
+/* line 6, ../sass/layout/_footer.scss */
+footer h1 {
+  float: left;
+}
+/* line 9, ../sass/layout/_footer.scss */
+footer h2 {
+  float: right;
+}
+@media (min-width: 768px) {
+  /* line 9, ../sass/layout/_footer.scss */
+  footer h2 {
+    display: none;
+  }
+}
+
+/* line 5, ../sass/layout/_body.scss */
+.banner, .introduction, .col {
+  width: 90%;
+  padding: 20px 0;
+  line-height: 1.5em;
+  font-size: 1.25rem;
+}
+
+/* line 11, ../sass/layout/_body.scss */
+.container {
+  width: 100%;
+  background-color: white;
+  padding: 40px 0;
+}
+@media (min-width: 768px) {
+  /* line 11, ../sass/layout/_body.scss */
+  .container {
+    overflow: auto;
+  }
+}
+
+/* line 20, ../sass/layout/_body.scss */
+.bottom {
+  padding-top: 60px;
+}
+
+/* line 23, ../sass/layout/_body.scss */
+.banner h3, .banner p {
+  padding: 20px 0;
+}
+
+@media (min-width: 1024px) {
+  /* line 1, ../sass/layout/_header.scss */
+  .name, .main-nav li {
+    margin: 2% 0;
+  }
+}
+
+/* line 7, ../sass/layout/_header.scss */
+.name {
+  text-shadow: 0px 2px 5px black;
+  padding: 3% 0;
+}
+@media (min-width: 768px) {
+  /* line 7, ../sass/layout/_header.scss */
+  .name {
+    padding: 0;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 7, ../sass/layout/_header.scss */
+  .name {
+    text-align: left;
+    float: left;
+    width: 50%;
+  }
+}
+
+/* line 19, ../sass/layout/_header.scss */
+.main-nav {
+  padding-left: 0;
+  list-style: none;
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  /* line 19, ../sass/layout/_header.scss */
+  .main-nav {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 19, ../sass/layout/_header.scss */
+  .main-nav {
+    margin: 2% 0;
+    text-align: right;
+    float: right;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    width: 50%;
+  }
+}
+
+/* line 37, ../sass/layout/_header.scss */
+.main-nav li {
+  background-color: white;
+  padding: 3% 0;
+  margin: 2% 0;
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  /* line 37, ../sass/layout/_header.scss */
+  .main-nav li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    background-color: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 1, ../sass/layout/_column.scss */
+  .col {
+    width: 50%;
+    display: inline;
+    float: left;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 1, ../sass/layout/_column.scss */
+  .col {
+    width: 33.3%;
+  }
+}
+
+/* line 1, ../sass/layout/_introduction.scss */
+.introduction p {
+  line-height: 2em;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/layout/_introduction.scss */
+  .introduction p {
+    float: left;
+    width: 60%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 10, ../sass/layout/_introduction.scss */
+  .introduction {
+    width: 100%;
+    text-align: left;
+    overflow: auto;
+  }
+}
+
+/* line 17, ../sass/layout/_introduction.scss */
+.introduction img {
+  -webkit-box-shadow: black 5px 5px 5px;
+  -moz-box-shadow: black 5px 5px 5px;
+  box-shadow: black 5px 5px 5px;
+}
+@media (min-width: 768px) {
+  /* line 17, ../sass/layout/_introduction.scss */
+  .introduction img {
+    width: 30%;
+    float: right;
+    margin-left: 20px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+  }
+}
+
+/* line 1, ../sass/layout/_bottom-nav.scss */
+.bottom-nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/layout/_bottom-nav.scss */
+  .bottom-nav {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    float: right;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 9, ../sass/layout/_bottom-nav.scss */
+  .bottom-nav li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    background-color: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+/* line 1, ../sass/user_interaction/_user_interaction.scss */
+a:visited {
+  color: inherit;
+}
+
+/* line 4, ../sass/user_interaction/_user_interaction.scss */
+li:hover {
+  background-color: light-grey;
+}
+
+@media (min-width: 768px) {
+  /* line 7, ../sass/user_interaction/_user_interaction.scss */
+  a:hover {
+    background-color: rgba(43, 41, 39, 0.1);
+  }
+}

@@ -1,14 +1,14 @@
 .bottom-nav {
 	display: none;
 	@media #{$mobile} {
-		display: inline-block;
+		@include inline-block;
 		float: right;
 		font-size: 1rem;
 	}
 }
 .bottom-nav li {
 	@media #{$mobile} {
-		display: inline-block;
+		@include inline-block;
 		background-color: inherit;
 		margin: 0 auto;
 		padding: 0 20px;

@@ -4,7 +4,7 @@
 	@media #{$mobile} { 
 		float: left;
 		width: 60%;
-		display: inline-block;
+		@include inline-block;
 	}
 }
 .introduction {
@@ -15,10 +15,11 @@
 	}
 }
 .introduction img {
+	@include box-shadow(black 5px 5px 5px);
 	@media #{$mobile} {
 		width:30%;
 		float: right;
 		margin-left: 20px;
-		display: inline-block;
+		@include inline-block
 	}
 }

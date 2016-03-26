@@ -5,6 +5,7 @@
 	}
 }
 .name {
+	@include single-text-shadow;
 	padding: 3% 0;
 	@media #{$mobile} {
 		padding: 0;
@@ -28,7 +29,7 @@
 		margin: 2% 0;
 		text-align: right;
 		float: right;
-		display: inline-block;
+		@include inline-block;
 		width:50%;
 	}
 }
@@ -39,7 +40,7 @@
 		margin: 2% 0;
 		font-size: 1.5em;
 		@media #{$mobile} {
-			display: inline-block;
+			@include inline-block;
 			background-color: inherit;
 			margin: 0 auto;
 			padding: 0 20px;
