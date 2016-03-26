@@ -1,0 +1,24 @@
+.introduction p {
+	line-height: 2em;
+	padding-top: 20px;
+	@media #{$mobile} { 
+		float: left;
+		width: 60%;
+		display: inline-block;
+	}
+}
+.introduction {
+	@media #{$mobile} {
+		width: 100%;
+		text-align: left;
+		overflow: auto;
+	}
+}
+.introduction img {
+	@media #{$mobile} {
+		width:30%;
+		float: right;
+		margin-left: 20px;
+		display: inline-block;
+	}
+}

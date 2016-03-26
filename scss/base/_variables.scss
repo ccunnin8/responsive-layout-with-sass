@@ -1,0 +1,22 @@
+/** COLOR NAMES **/
+
+$white: white; 
+$black: black;
+$gray: rgba(43,41,39,0.10);
+$fuzzy-black: rgba(0, 0, 0, 0.2);
+$light-grey: light-grey;
+
+/** Functional color names **/
+
+$body-color: $white;
+$background-color: $gray;
+$top-footer-border: $black;
+$nav-hover: $light-grey;
+$box-shadow: $fuzzy-black;
+
+/** media break points **/
+$mobile: '(min-width: 768px)';
+$tablet: '(min-width: 1024px)';
+
+
+

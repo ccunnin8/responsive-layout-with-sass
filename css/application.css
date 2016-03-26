@@ -1,0 +1,172 @@
+/*main rules and styles for all devises*/
+footer, .banner, .introduction, .col, .container, .name, .main-nav li {
+  text-align: center; }
+
+body, p, img, .banner, .introduction, .col, .container {
+  margin: 0 auto; }
+
+/** COLOR NAMES **/
+/** Functional color names **/
+/** media break points **/
+/***** BASE STYLES *******/
+html {
+  width: 100%;
+  background-color: rgba(43, 41, 39, 0.1); }
+
+body {
+  max-width: 1340px; }
+
+img {
+  width: 90%;
+  display: block;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+
+header {
+  overflow: auto; }
+  @media (min-width: 1024px) {
+    header {
+      width: 90%;
+      margin: 0 auto; } }
+
+span {
+  font-weight: bold; }
+
+p {
+  max-width: 70%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+footer {
+  border-top: 1px solid black;
+  font-size: 0.75rem;
+  padding: 0 10px; }
+  footer h1 {
+    float: left; }
+  footer h2 {
+    float: right; }
+    @media (min-width: 768px) {
+      footer h2 {
+        display: none; } }
+
+.banner, .introduction, .col {
+  width: 90%;
+  padding: 20px 0;
+  line-height: 1.5em;
+  font-size: 1.25rem; }
+
+.container {
+  width: 100%;
+  background-color: white;
+  padding: 40px 0; }
+  @media (min-width: 768px) {
+    .container {
+      overflow: auto; } }
+
+.bottom {
+  padding-top: 60px; }
+
+.banner h3, .banner p {
+  padding: 20px 0; }
+
+@media (min-width: 1024px) {
+  .name, .main-nav li {
+    margin: 2% 0; } }
+
+.name {
+  padding: 3% 0; }
+  @media (min-width: 768px) {
+    .name {
+      padding: 0; } }
+  @media (min-width: 1024px) {
+    .name {
+      text-align: left;
+      float: left;
+      width: 50%; } }
+
+.main-nav {
+  padding-left: 0;
+  list-style: none;
+  width: 90%;
+  margin: auto; }
+  @media (min-width: 768px) {
+    .main-nav {
+      text-align: center; } }
+  @media (min-width: 1024px) {
+    .main-nav {
+      margin: 2% 0;
+      text-align: right;
+      float: right;
+      display: inline-block;
+      width: 50%; } }
+
+.main-nav li {
+  background-color: white;
+  padding: 3% 0;
+  margin: 2% 0;
+  font-size: 1.5em; }
+  @media (min-width: 768px) {
+    .main-nav li {
+      display: inline-block;
+      background-color: inherit;
+      margin: 0 auto;
+      padding: 0 20px; } }
+
+@media (min-width: 768px) {
+  .col {
+    width: 50%;
+    display: inline;
+    float: left; } }
+@media (min-width: 1024px) {
+  .col {
+    width: 33.3%; } }
+
+.introduction p {
+  line-height: 2em;
+  padding-top: 20px; }
+  @media (min-width: 768px) {
+    .introduction p {
+      float: left;
+      width: 60%;
+      display: inline-block; } }
+
+@media (min-width: 768px) {
+  .introduction {
+    width: 100%;
+    text-align: left;
+    overflow: auto; } }
+
+@media (min-width: 768px) {
+  .introduction img {
+    width: 30%;
+    float: right;
+    margin-left: 20px;
+    display: inline-block; } }
+
+.bottom-nav {
+  display: none; }
+  @media (min-width: 768px) {
+    .bottom-nav {
+      display: inline-block;
+      float: right;
+      font-size: 1rem; } }
+
+@media (min-width: 768px) {
+  .bottom-nav li {
+    display: inline-block;
+    background-color: inherit;
+    margin: 0 auto;
+    padding: 0 20px; } }
+
+a:visited {
+  color: inherit; }
+
+li:hover {
+  background-color: light-grey; }
+
+@media (min-width: 768px) {
+  a:hover {
+    background-color: rgba(43, 41, 39, 0.1); } }
+
+/*# sourceMappingURL=application.css.map */

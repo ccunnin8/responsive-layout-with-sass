@@ -1,0 +1,25 @@
+.banner, .introduction, .col, .container { 
+	@extend %text-centered;
+	@extend %element-centered;
+}
+.banner, .introduction, .col { 
+	width: 90%;
+	padding: 20px 0;
+	line-height: 1.5em;
+	font-size: 1.25rem;
+}
+.container {
+	width: 100%;
+	background-color: $body-color;
+	padding: 40px 0;
+	@media #{$mobile} { 
+		overflow: auto;
+	}
+}
+
+.bottom {
+	padding-top: 60px;
+}
+.banner h3, .banner p {
+	padding: 20px 0;
+}

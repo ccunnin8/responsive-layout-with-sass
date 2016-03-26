@@ -1,0 +1,10 @@
+.col {
+	@media #{$mobile} {
+		width: 50%;
+		display:inline;
+		float:left;
+	}
+	@media #{$tablet} {
+		width: 33.3%;
+	}
+}

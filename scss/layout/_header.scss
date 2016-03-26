@@ -1,0 +1,47 @@
+.name, .main-nav li {
+	@extend %text-centered;
+	@media #{$tablet} {
+		margin: 2% 0;
+	}
+}
+.name {
+	padding: 3% 0;
+	@media #{$mobile} {
+		padding: 0;
+	}
+	@media #{$tablet} {
+		text-align: left;
+		float: left;
+		width: 50%;
+	}
+}
+.main-nav {
+	padding-left: 0;
+	list-style: none;
+	width: 90%;
+	margin: auto;
+	
+	@media #{$mobile} {
+		text-align: center;
+	}
+	@media #{$tablet} {
+		margin: 2% 0;
+		text-align: right;
+		float: right;
+		display: inline-block;
+		width:50%;
+	}
+}
+
+.main-nav li {
+		background-color: $body-color;
+		padding: 3% 0;
+		margin: 2% 0;
+		font-size: 1.5em;
+		@media #{$mobile} {
+			display: inline-block;
+			background-color: inherit;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+	}
