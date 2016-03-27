@@ -1,0 +1,10 @@
+.col {
+	@include mobile {
+		width: $mobile-column-width;
+		display:inline;
+		float:left;
+	}
+	@include tablet {
+		width: $tablet-column-width;
+	}
+}

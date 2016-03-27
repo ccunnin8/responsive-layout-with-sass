@@ -1,14 +1,14 @@
 .introduction p {
 	line-height: 2em;
 	padding-top: 20px;
-	@media #{$mobile} { 
+	@include mobile { 
 		float: left;
 		width: 60%;
 		@include inline-block;
 	}
 }
 .introduction {
-	@media #{$mobile} {
+	@include mobile {
 		width: 100%;
 		text-align: left;
 		overflow: auto;
@@ -16,7 +16,7 @@
 }
 .introduction img {
 	@include box-shadow(black 5px 5px 5px);
-	@media #{$mobile} {
+	@include mobile {
 		width:30%;
 		float: right;
 		margin-left: 20px;

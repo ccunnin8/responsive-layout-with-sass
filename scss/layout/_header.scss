@@ -7,10 +7,10 @@
 .name {
 	@include single-text-shadow;
 	padding: 3% 0;
-	@media #{$mobile} {
+	@include mobile {
 		padding: 0;
 	}
-	@media #{$tablet} {
+	@include tablet {
 		text-align: left;
 		float: left;
 		width: 50%;
@@ -22,10 +22,10 @@
 	width: 90%;
 	margin: auto;
 	
-	@media #{$mobile} {
+	@include mobile {
 		text-align: center;
 	}
-	@media #{$tablet} {
+	@include tablet {
 		margin: 2% 0;
 		text-align: right;
 		float: right;
@@ -39,7 +39,7 @@
 		padding: 3% 0;
 		margin: 2% 0;
 		font-size: 1.5em;
-		@media #{$mobile} {
+		@include mobile {
 			@include inline-block;
 			background-color: inherit;
 			margin: 0 auto;

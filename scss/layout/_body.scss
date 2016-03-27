@@ -1,18 +1,21 @@
+* {
+	font-family: $google-font, $font-stack;
+}
 .banner, .introduction, .col, .container { 
 	@extend %text-centered;
 	@extend %element-centered;
 }
 .banner, .introduction, .col { 
-	width: 90%;
+	width: $banner-and-intro-width;
 	padding: 20px 0;
-	line-height: 1.5em;
-	font-size: 1.25rem;
+	line-height: $line-height;
+	font-size: $banner-font;
 }
 .container {
-	width: 100%;
+	width: $container-width;
 	background-color: $body-color;
 	padding: 40px 0;
-	@media #{$mobile} { 
+	@include mobile {
 		overflow: auto;
 	}
 }

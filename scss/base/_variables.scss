@@ -4,7 +4,7 @@ $white: white;
 $black: black;
 $gray: rgba(43,41,39,0.10);
 $fuzzy-black: rgba(0, 0, 0, 0.2);
-$light-grey: light-grey;
+$light-grey: lightgrey;
 $default-text-shadow-color: black;
 $default-text-shadow-blur: 5px;
 $default-text-shadow-v-offset: 2px;
@@ -17,6 +17,20 @@ $top-footer-border: $black;
 $nav-hover: $light-grey;
 $box-shadow: $fuzzy-black;
 
+/*** fontfamily ***/
+$google-font: "Droid Serif";
+$font-stack: sans-serif, arial, helvetica;
+
+/** Font Size ***/
+$line-height: 1.5em; 
+$banner-font: 1.25em;
+$mobile-nav: 1rem;
+
+/***Width *****/
+$banner-and-intro-width: 90%;
+$container-width: 100%;
+$tablet-column-width: 33.3%;
+$mobile-column-width: 50%;
 /** media break points **/
 $mobile: '(min-width: 768px)';
 $tablet: '(min-width: 1024px)';
