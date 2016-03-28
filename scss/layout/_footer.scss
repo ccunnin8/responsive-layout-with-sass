@@ -1,7 +1,7 @@
 footer {
 	@extend %text-centered;
 	border-top: 1px solid $top-footer-border;
-	font-size: 0.75rem;
+	font-size: $footer-font-size;
 	padding : 0 10px;
 	h1 {
 		float: left;

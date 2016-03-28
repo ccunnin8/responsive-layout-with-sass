@@ -3,7 +3,7 @@
 	@include mobile {
 		@include inline-block;
 		float: right;
-		font-size: 1rem;
+		font-size: $bottom-nav-font;
 	}
 }
 .bottom-nav li {
